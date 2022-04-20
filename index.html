@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section class="containerCard">
+            <div class="containerCard__img">
+                <img src="assets/drawers.jpg" alt="User">
+            </div>
+            <div class="containerCard__info">
+                <h2 class="containerCard__info--h2">
+                    Shift the overall look and feel by adding these wonderful 
+                    touches to furniture in your home
+                </h2>
+                <p class="containerCard__info--p">
+                    Ever been in a room and felt like something was missing? Perhaps 
+                    it felt slightly bare and uninviting. I’ve got some simple tips 
+                    to help you make any room feel complete.
+                </p>
+                <div class="containerCard__subCard">
+                    <div class="containerCard__subCard--left">
+                        <div class="containerCard__subCard--containerImg">
+                            <img src="assets/avatar-michelle.jpg" alt="">
+                        </div>
+                        <div class="containerCard__subCard--containerInfo">
+                            <h4>
+                                Michelle Appleton
+                            </h4>
+                            <p>
+                                28 Jun 2020
+                            </p>
+                        </div>
+                    </div>
+                    <div class="containerCard__subCard--right">
+                        <div class="containerCard__subCard--right pointer" onclick="modal()" id="clickModalOpen" style="display: flex">
+                            <img class="containerCard__subCard--rightImg" src="assets/icon-share.svg" alt="">
+                        </div>
+                        <div class="containerCard__subCard--right pointer secundary" onclick="modalClose()" id="clickModalClose" style="display:none">
+                            <img class="containerCard__subCard--rightImg" src="assets/icon-share.svg" alt="">
+                        </div>  
+                        <div class="containerCard__contenedorModal" style="display: none;" id="hiddenModal">
+                            <div class="containerCard__modal">
+                                <div class="containerCard__modalBlock">
+                                    <p>
+                                        SHARE
+                                    </p>
+                                    <img src="assets/icon-facebook.svg" alt="">
+                                    <img src="assets/icon-twitter (1).svg" alt="">
+                                    <img src="assets/icon-pinterest.svg " alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+</html>

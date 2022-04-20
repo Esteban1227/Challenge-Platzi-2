@@ -1,0 +1,28 @@
+@media screen and (max-width: 900px) {
+    .containerCard{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+        width: 375px;
+        height: 680px;
+        margin-top: 100px;
+        &__modal{
+            width: 375px;
+            height: 70px;
+            right: -30px;
+            bottom: -17px;
+            border-top-left-radius:0 ;
+            border-top-right-radius: 0;
+            &::before{
+                border: none;
+            }
+        }
+        &__modalBlock{
+            width: 300px;
+        }
+        &__subCard{
+            &--right{
+                z-index: 10;
+            }
+        }
+    }
+}

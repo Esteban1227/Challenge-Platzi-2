@@ -1,0 +1,110 @@
+
+.containerCard{
+    margin: 170px auto;
+    background-color: white;
+    width: 800px;
+    height: 350px;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.178);
+    &__img{
+        img{
+            width: 100%;
+            height: 100%; 
+            border-top-left-radius: 10px;
+            border-bottom-left-radius:10px;
+            object-fit: cover;
+        }
+    }
+    &__info{
+        padding: 30px;
+        &--h2{
+            color: $VeryDarkGrayishBlue;
+            font-size: 24px;
+        }
+        &--p{
+            font-size: 14px;
+            color: $GrayishBlue;
+            margin-top: 15px;
+        }
+    }
+    &__subCard{
+        width: 100%;
+        height: 50px;
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &--left{
+            display: flex;
+            align-items: center;
+        }
+        &--containerImg{
+            img{
+                width: 50px;
+                border-radius: 50%;
+                margin-right: 15px;
+            }
+        }
+        &--containerInfo{
+            h4{
+                color: $VeryDarkGrayishBlue;
+            }
+            p{
+                font-size: 13px;
+                color: $DesaturatedDarkBlue     ;
+            }
+        }
+        &--right{
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background-color: $LightGrayishBlue;
+            border-radius: 50%;
+            position: relative;
+        }
+        &--rightImg{
+            margin: auto;
+        }
+        .pointer{
+            cursor: pointer;
+        }
+    }
+    &__modal{
+        border-radius: 10px;
+        background-color: $VeryDarkGrayishBlue;
+        position: absolute;
+        bottom: 60px;
+        right: -95px;
+        width: 250px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        &::before{
+            content: "";
+            position: absolute;
+            top: 60px;
+            left: 116px;
+            width: 0px;
+            height: 0px;
+            border-top: 20px solid $VeryDarkGrayishBlue;
+            border-right: 20px solid transparent;
+            border-left: 20px solid transparent;
+        }
+        img{
+            width: 20px;
+            height: 20px;
+        }
+        p{
+            color: white;
+        }
+    }
+    &__modalBlock{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
